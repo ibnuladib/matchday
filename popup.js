@@ -1,5 +1,5 @@
 const leagueCodes = ["PL", "PD", "BL1", "SA", "FL1"]; // Premier League, La Liga, Bundesliga, Serie A, Ligue 1
-
+const API_TOKEN = "__API_TOKEN__";
 const heading = document.getElementById("heading");
 const matchInfo = document.getElementById("matchInfo");
 const teamSearch = document.getElementById("teamSearch");
@@ -156,17 +156,16 @@ reselectBtn.addEventListener("click", () => {
   });
 });
 
-// Initialize the popup
 async function init() {
   // Load teams from storage, fetch them if not saved
   chrome.storage.local.get(["allTeams"], async (data) => {
     if (data.allTeams) {
       allTeams = data.allTeams;
-      loadSavedTeam(); // Check if a team is saved and load match info
+      loadSavedTeam(); // Ch
     } else {
       allTeams = await fetchAllTeams();
-      chrome.storage.local.set({ allTeams }); // Save the fetched teams in storage
-      loadSavedTeam(); // Check if a team is saved and load match info
+      chrome.storage.local.set({ allTeams }); 
+      loadSavedTeam(); 
     }
   });
 
