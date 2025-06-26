@@ -1,5 +1,5 @@
 const leagueCodes = ["PL", "PD", "BL1", "SA", "FL1"]; // Premier League, La Liga, Bundesliga, Serie A, Ligue 1
-const API_TOKEN = "__API_TOKEN__";
+const API_TOKEN = "8ffcf1a6edad4fdfb518641b70341685";
 const heading = document.getElementById("heading");
 const matchInfo = document.getElementById("matchInfo");
 const teamSearch = document.getElementById("teamSearch");

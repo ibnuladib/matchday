@@ -1,0 +1,23 @@
+{
+  "name": "liverpool-score-extension",
+  "version": "1.0.0",
+  "main": "config1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibnuladib/matchday.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibnuladib/matchday/issues"
+  },
+  "homepage": "https://github.com/ibnuladib/matchday#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
